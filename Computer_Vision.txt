@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-11-04T21:46:33+01:00
+
+====== Computer Vision ======
+Created Freitag 04 November 2022
+
+===== Roadmap =====
+* Structure-from-Motion
+* Sparse Stereo Reconstruction
+* Dense Stereo Reconstruction
+* Visual Odometry
+* Visual SLAM
+* Real-time 3D Reconstruction with different sensors, e.g.
+	* RGB-D: Kinect
+	* Stereo Camera: OAK-D-Lite
+
+===== OpenCV Competition =====
+e.g. for 2021
+→ https://opencv.org/opencv-ai-competition-2021/

@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-11-04T20:49:53+01:00
+
+====== Literature and References ======
+Created Freitag 04 November 2022
+
+
+===== Overview =====
+
+==== General Computer Vision ====
+
+* Simon J.D. Prince: Computer Vision: Models, Learning, and Inference ([[~/Documents/Literatur/Informatik/Computer Vision/Prince_Computer_Vision_Models_Learning_And_Inference/ComputerVision_Models_Learning_Inference.pdf|Prince_CV.pdf]])
+  -> http://web4.cs.ucl.ac.uk/staff/s.prince/book/book.pdf 
+
+==== 3D Reconstruction ====
+
+* Robert Maier: High-Quality 3D Reconstruction from Low-Cost RGB-D Sensors (Dissertation 2020) - ([[~/Documents/Literatur/Informatik/Computer Vision/High-Quality_3D_Reconstruction_from_Low-Cost_RGB-D_Cameras.pdf|RMaier_Diss.pdf]])
+  → https://mediatum.ub.tum.de/doc/1516463/1516463.pdf
+
+==== SLAM ====
+
+* For overview on SLAM and other typical robotics problems: 
+  Thrun //et al.//: Probabilistic Robotics ([[~/Documents/Literatur/Informatik/Computer Vision/ProbabilisticRobotics.pdf|ProbabilisticRobotics.pdf]]) 
+  → https://docs.ufpr.br/~danielsantos/ProbabilisticRobotics.pdf
+	* Mapping: Chapter 6
+	* Localization: Chapter 7
+	* SLAM: Chapter 10 
+* Lecture on SLAM
+  → https://www.youtube.com/watch?v=B2qzYCeT9oQ&list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm
+
+===== Research =====
+
+TUM Vision Research Group (D. Cremers)
+https://vision.in.tum.de/research/
+
+Visual SLAM
+https://vision.in.tum.de/research/vslam
+
+LSD Slam
+https://jakobengel.github.io/pdf/engel2015_stereo_lsdslam.pdf
+
+===== Libraries =====
+
+==== 3D Data Processing ====
+
+* Open3D
+  → http://www.open3d.org/docs/release/

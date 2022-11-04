@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-11-04T20:25:52+01:00
+
+====== Devices ======
+
+Interesting devices for computer vision other than RGB cameras
+* Stereo cameras → [[+OAK-D-Lite|OAK-D-Lite]]
+* RGB-D cameras → [[+Kinect|Kinect]]

@@ -1,0 +1,62 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-11-04T19:38:52+01:00
+
+====== OAK D Lite ======
+//Created Freitag 04 November 2022//
+
+===== Online Documentation =====
+Root
+→ https://docs.luxonis.com/en/latest/
+
+===== Specifications =====
+
+Hardware
+→ https://docs.luxonis.com/projects/hardware/en/latest/pages/DM9095.html#dm9095
+Datasheet
+→ https://github.com/luxonis/depthai-hardware/blob/master/DM9095_OAK-D-LITE_DepthAI_USB3C/Datasheet/OAK-D-Lite_Datasheet.pdf
+
+===== Pretrained Models =====
+
+Models can be found here
+→ https://github.com/luxonis/depthai/tree/main/resources/nn
+Data used to train these models (PASCAL 2007)
+→ http://host.robots.ox.ac.uk/pascal/VOC/voc2007/
+
+===== Setting Up Environment =====
+
+{{{code: linenumbers="True"
+$ cd <DIR>
+$ git clone https://github.com/luxonis/depthai.git$ cd depthai
+$ conda create -n oak
+$ conda activate oak
+
+# for linux run these two commands to add udev rule to setup usb device correctly
+$ echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="03e7", MODE="0666"' | sudo tee /etc/udev/rules.d/80-m    ovidius.rules
+$ sudo udevadm control --reload-rules && sudo udevadm trigger
+$ python3 install_requirements.py
+# running demo
+$ python3 depthai_demo.py
+}}}
+
+===== First Steps =====
+
+Tutorials
+→ {{id: ref_first_steps}} https://docs.luxonis.com/en/latest/pages/tutorials/first_steps/
+→ {{id: ref_hello_world}} https://docs.luxonis.com/projects/api/en/latest/tutorials/hello_world/
+→ {{id: ref_learn_opencv}} https://learnopencv.com/introduction-to-opencv-ai-kit-and-depthai/
+→ {{id: ref_medium}} https://robofoundry.medium.com/oak-d-lite-camera-basic-setup-38a563cd594f
+
+	
+===== Deployment to the Device =====
+
+https://docs.luxonis.com/en/latest/pages/tutorials/deploying-custom-model/
+
+====== Notes ======
+
+(from [[#ref_learn_opencv]])
+OAK-D and OAK-D-Lite are Spatial AI Cameras. At a high-level OAK-D and OAK-D-Lite consist of the following important components:
+
+* A 4K RGB Camera : The RGB camera placed at the center can capture very high-resolution 4k footage. Typically, this camera is used for visual perception.
+	A Stereo pair : This is a system of two cameras (the word “stereo” means two) used for depth perception.
+	Intel® Myriad™ X Visual Processing Unit (VPU) : This is the “brain” of the OAKs. It is a powerful processor capable of running modern neural networks for visual perception, and simultaneously creating a depth map from the stereo pair of images in real time. 
