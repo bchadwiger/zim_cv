@@ -35,14 +35,19 @@ $ conda activate oak
 $ echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="03e7", MODE="0666"' | sudo tee /etc/udev/rules.d/80-m    ovidius.rules
 $ sudo udevadm control --reload-rules && sudo udevadm trigger
 $ python3 install_requirements.py
-$ pip install opencv-python-headless # otherwise results in some Qt error, see (1) and (2)
-# OR
+$ # pip install opencv-python-headless # otherwise results in some Qt error, see (1) and (2)
 $ pip install opencv-python --upgrade
+$ pip install pyqt6 (3)
 # running demo
 $ python3 depthai_demo.py
+
+# install jupyter
+$ conda install ipython jupyter
+$ python -m ipykernel install --user --name=oak
 }}}
 (1) https://stackoverflow.com/questions/52337870/python-opencv-error-current-thread-is-not-the-objects-thread/72090539#72090539
 (2) https://stackoverflow.com/a/70700690
+(3) https://stackoverflow.com/a/74023503
 
 ===== First Steps =====
 
